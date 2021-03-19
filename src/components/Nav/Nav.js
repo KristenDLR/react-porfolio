@@ -7,7 +7,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import IndexPage from '../../pages/Index';
+
 
 
 
@@ -97,7 +97,7 @@ export default function SearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-       <IndexPage></IndexPage>
+      
         </Toolbar>
       </AppBar>
     </div>

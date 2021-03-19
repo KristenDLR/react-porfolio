@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-import SearchAppBar from './components/Nav/Nav';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 import './App.css';
+import SearchAppBar from '../src/components/Nav/Nav';
 
 function App() {
   return (

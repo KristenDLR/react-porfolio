@@ -123,10 +123,27 @@ section {
   text-align: center;
   font-size: 1.25rem;
   border-radius: 0.5em;
-  background-color: #201c29;
+  /* background-color: #201c29; */
   border: 12px solid rgba(91, 65, 242, 0.5);
-  color: #5b41f2;
+  /* color: #5b41f2; */
   mix-blend-mode: luminosity;
+
+  /* gradiant border  */
+  border-width: 3px;
+
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 300px;
+  height: 200px; */
+  /* font-family: Lato, sans-serif;
+  font-size: 2.5rem; */
+  /* text-transform: uppercase; */
+  color: white;
+  background: #222;
+  /* border-radius: var(--border-width); */
+
 }
 .content h1 {
   margin: 0;

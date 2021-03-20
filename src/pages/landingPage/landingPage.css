@@ -1,3 +1,4 @@
+
 *,
 ::before,
 ::after {
@@ -15,6 +16,7 @@ body {
   font-size: 62.5%;
   cursor: col-resize;
   background-color: #201c29;
+
 }
 
 .container,
@@ -113,6 +115,8 @@ section {
 }
 
 .content {
+
+  /* old */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,27 +128,117 @@ section {
   font-size: 1.25rem;
   border-radius: 0.5em;
   /* background-color: #201c29; */
-  border: 12px solid rgba(91, 65, 242, 0.5);
+  /* border: 12px solid;
+  border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1; */
   /* color: #5b41f2; */
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
+
+  /* old */
+
+
 
   /* gradiant border  */
-  border-width: 3px;
+  /* border-width: 3px; */
 
   /* position: relative; */
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* width: 300px;
   height: 200px; */
   /* font-family: Lato, sans-serif;
   font-size: 2.5rem; */
   /* text-transform: uppercase; */
-  color: white;
-  background: #222;
+  /* background: #222; */
   /* border-radius: var(--border-width); */
 
+  --angle: 0deg;
+  width: 50vmin;
+  /* height: 50vmin; */
+  border: 12px solid;
+  /* This won't work: */
+  border-image: linear-gradient(var(--angle), #f25fd0, #f25f61, #f2cb5f, #5ff281, #5f86f2, #a65ff2) 1;
+
+  animation: 10s rotate linear infinite;
+
+
 }
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+
+/* try gradiant  */
+
+/* div {
+  --angle: 0deg;
+  width: 50vmin;
+  height: 50vmin;
+  border: 10vmin solid; */
+  /* This won't work: */
+  /* border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
+
+  animation: 10s rotate linear infinite;
+} */
+
+/* @keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* input[type="checkbox"] {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+} */
+
+/* input[type="checkbox"]:after {
+  content: 'Toggle Fill';
+  white-space: nowrap;
+  padding-left: 1.5em;
+}
+
+input[type="checkbox"]:checked + div {
+  border-image-slice: 1 fill;
+} */
+
+
+/* end grandiant  */
+
+
+
 .content h1 {
   margin: 0;
   font-size: 5vw;

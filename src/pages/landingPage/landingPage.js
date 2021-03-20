@@ -6,13 +6,16 @@ class LandingPage extends React.Component {
       return (
 
 <div className="container">
+
    <p className="resize">resize container</p>
    <div className="dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
    <div className="content">
+   <div class="gradient-border">
      <h1>Animating border-radius</h1><span>&</span>
      <h2>mix-blend-mode: luminosity</h2>
      <p></p>Follow me<a href="https://twitter.com/andrejsharapov" target="target">in Twitter</a>.
      Part of the<a href="https://codepen.io/collection/DPjNmW/" target="target">CSS Mix-blend-mode here</a>.
+   </div>
    </div>
 </div>
       );

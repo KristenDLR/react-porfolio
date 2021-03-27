@@ -1,11 +1,18 @@
-import React from "react";
+import * as React from "react";
 import './landingPage.css';
+// import { useGlobalEvent } from "beautiful-react-hooks";
+import InfoBar from "../../components/InfoBar/InfoBar";
+
+// const { useState } = React;
 
 class LandingPage extends React.Component {
+
     render() {
       return (
 
 <div className="container">
+
+  <InfoBar></InfoBar>
 
    <p className="resize">resize container</p>
    <div className="dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
@@ -17,21 +24,21 @@ class LandingPage extends React.Component {
      Part of the<a href="https://codepen.io/collection/DPjNmW/" target="target">CSS Mix-blend-mode here</a>.
    </div>
    </div>
+
 </div>
       );
-    }
+    };
+    // updateDimension =() => {
+    //   this.setState({ width: window.innerWidth, height: window.innerHeight});
+    // };
+    // componentDidMount() {
+    //   window.addEventListener('resize', this.updateDimension);
+    // };
+    // componentWillUnmount() {
+    //   window.removeEventListener('resize', this.updateDimension);
+    // }
+
   }
-/* <section>
-  <h2>Mix-blend-mode: luminosity</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus soluta, quas dolore, non, officia ea sequi molestias assumenda libero ratione expedita hic consequatur eos ipsum et quasi id incidunt odit?</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum error id aspernatur magni rem provident nemo nulla corporis culpa laudantium. Ea temporibus non vitae voluptatem sunt, pariatur odio dolorem harum.</p>
-  <p>
-    <Lorem>ipsum dolor sit amet, consectetur adipisicing elit. Temporibus soluta, quas dolore, non, officia ea sequi molestias assumenda libero ratione expedita hic consequatur eos ipsum et quasi id incidunt odit?</Lorem>
-  </p>
-  <p>
-    <Lorem>ipsum dolor, sit amet consectetur adipisicing elit. Harum error id aspernatur magni rem provident nemo nulla corporis culpa laudantium. Ea temporibus non vitae voluptatem sunt, pariatur odio dolorem harum.</Lorem>
-  </p>
-</section> */
 
 
 

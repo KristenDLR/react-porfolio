@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 import './App.css';
 import SearchAppBar from '../src/components/Nav/Nav';
+// import InfoBar from "../src/components/InfoBar/InfoBar";
 import LandingPage from '../src/pages/landingPage/landingPage';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       </header>
     </div>
     <LandingPage></LandingPage>
+    
     </Container>
     </Router>
 

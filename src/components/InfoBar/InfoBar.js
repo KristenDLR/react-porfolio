@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import "../InfoBar/InfoBar.css";
-import Chevron from "./Chevron";=
+import Chevron from "./Chevron";
 
 function InfoBar(props){
-  const[setActive,setActiveState]= use("");
+  const[setActive,setActiveState]= useState("");
 
-  function toggleAccordian(){
-    setActiveState()
+  function toggleAccordion(){
+    setActiveState(setActive === "" ? "active" : "");
   }
 
 
   return(
    <div className="accordion__section">
-    <button className="accordion">
-      <p className="accordian__title">{props.title}</p>
+    <button className= {'accordion ${setActive}'} onClick={toggleAccordion}>
+      <p className="accordion__title">{props.title}</p>
       <Chevron/>
     </button>
     <div className="accordion__content">

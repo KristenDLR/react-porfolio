@@ -29,6 +29,13 @@ function Accordion(props) {
   //   });
   // };
 
+
+    // setTimeout(
+    //   () => this.setState(toggleAccordion),
+    //   3000
+    // )
+
+
   const Position = () => {
     useEffect(() => {
       window.addEventListener("mousemove", toggleAccordion);

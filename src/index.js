@@ -13,11 +13,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Accordion from "./components/Accordion/Accordion";
+import { BrowserRouter as Router } from "react-router-dom";
+import Container from "@material-ui/core/Container";
+import './App.css';
+import SearchAppBar from '../src/components/Nav/Nav';
 
 // import "./styles.css";
 
 function App() {
  return (
+  <Router>
+  <Container fluid>
+    <SearchAppBar></SearchAppBar>
+
+
+<div className="App">
+  <header className="App-header">
+
    <div>
      <Accordion
        title="About Kristen"
@@ -27,6 +39,12 @@ function App() {
      />
 
    </div>
+   </header>
+    </div>
+
+
+    </Container >
+    </Router>
  );
 }
 

@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   transition: max-width 1s ease-in;
+  position: relative;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */

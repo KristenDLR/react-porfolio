@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Chevron from "../InfoBar/Chevron";
+import {  Row, Col }from 'react-bootstrap'
+import Projects from '../../pages/Projects/Projects';
 
 import "./Accordion.css";
 
@@ -50,6 +52,9 @@ function Accordion(props) {
 
 
   return (
+    <Row>
+
+    <Col xs={6} md={6} lg={6}>
     <div className="accordion__section" ref={content} style={{ maxWidth: `${setWidth}` }}>
     <div className="container">
        <p className="resize">resize container</p>
@@ -80,6 +85,10 @@ function Accordion(props) {
     </div>
     </div>
     </div>
+    
+    <Projects></Projects>
+    </Col>
+    </Row>
 
   );
 }
